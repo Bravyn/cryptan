@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Neural Labs.
-        </p>
+        
+       <Hello/>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,7 +18,7 @@ function App() {
         >
           Healthy Lungs powered by AI
           </a>
-          <Hello/>
+          
         
       </header>
     </div>

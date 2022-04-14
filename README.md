@@ -1,2 +1,5 @@
 # cryptan
-Cryptan is a web app that lets people know who their friends are following online so that they can follow them too.
+Cryptan is a web app that lets any doctor anywhere upload get fast
+access to Neural Lab Africa's ML platform.
+
+Visit https://cryptan.bravyn.repl.co to see it in action.
