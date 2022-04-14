@@ -1,6 +1,8 @@
 import logo from './logo.jpeg';
 import './App.css';
 import Hello from './components/Intro.jsx';
+import Recents from './components/Recents.jsx'
+//import axios from 'axios'
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         
        <Hello/>
+        <Recents/>  
         
         <a
           className="App-link"
@@ -18,7 +21,7 @@ function App() {
         >
           Healthy Lungs powered by AI
           </a>
-          
+        
         
       </header>
     </div>
