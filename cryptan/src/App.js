@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+import logo from './logo.jpeg';
 import './App.css';
+import Hello from './components/Intro.jsx';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Neural Labs.
         </p>
         <a
           className="App-link"
@@ -15,8 +16,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          I am learning React
-        </a>
+          Healthy Lungs powered by AI
+          </a>
+          <Hello/>
+        
       </header>
     </div>
   );
