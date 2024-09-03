@@ -6,9 +6,16 @@ import Intro from './components/Intro.jsx';
 function App() {
   return (
     <div className="App">
-       
-        <Intro/>  
-        
+
+      <Intro />
+
+      {/* From Uiverse.io by xueyuantan */}
+      <div className='btn-container'>
+        <button> Start  </button>
+
+      </div>
+
+
     </div>
   );
 }
