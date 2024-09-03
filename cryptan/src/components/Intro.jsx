@@ -1,7 +1,7 @@
 const Hello = (() => {
   return( 
     <div>
-        <h1>Hello, welcome to Neural Labs</h1>
+        <h1>The Magnficent </h1>
     </div>
   )  
 })
