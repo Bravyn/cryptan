@@ -1,7 +1,7 @@
 const Hello = (() => {
   return( 
     <div>
-        <h1>The Magnficent </h1>
+        <h1>The <span> Magnficent </span> </h1>
     </div>
   )  
 })
