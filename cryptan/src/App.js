@@ -1,23 +1,23 @@
 import logo from './logo.jpeg';
+import {BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import './App.css';
-import Intro from './components/Intro.jsx';
+import './components/NavBar.jsx'
+import Intro from './components/Intro.jsx'
+import NavBar from './components/NavBar.jsx';
+import Services from './components/Services.jsx'
+import SignUp from './components/LoginForm.jsx'
 //import axios from 'axios'
 
-function App() {
+const App = (() => {
   return (
-    <div className="App">
+    <Router>
+      <NavBar/>
+      <Routes>
+        <Route path = "/" element = {<Intro/>} />
+      </Routes>
 
-      <Intro />
-
-      {/* From Uiverse.io by xueyuantan */}
-      <div className='btn-container'>
-        <button> Start  </button>
-
-      </div>
-
-
-    </div>
-  );
-}
+    </Router>
+  )
+});
 
 export default App;

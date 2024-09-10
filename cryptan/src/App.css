@@ -1,54 +1,235 @@
+body {
+  /*background-image: url("./components/logg.jpg");*/
+  background: linear-gradient(135deg, #90a6f5, #000001);
+
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+
+}
 
 
-h1{
+h1 {
   text-align: center;
   font-family: "SUSE", sans-serif;
-  font-size: 7em;
-  font-weight: 100;
+  font-size: 8em;
+  font-weight: 300;
+  color: #ffffff;
+}
+h2{
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  font-family: "SUSE" , sans-serif;
+  
 }
 
-h1 span{
-    font-weight: 500;
-}
 
-.btn-container{
+.btn-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
-/* From Uiverse.io by xueyuantan */ 
-button {
+.footer-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   
-  width: 9em;
-  height: 3em;
-  border-radius: 30em;
-  font-size: 22px;
-  font-family: "SUSE", sans-serif;
-  font-weight: bold;
-  letter-spacing: .2em;
+  
+}
+
+.glass-card two{
+ 
+  padding: 2px;
+  width: 500px;
+}
+
+.columns {
+  padding: auto;
+  margin-top: .4rem;
+  margin: 2em;
+
+  
+}
+.columns img{
+  width: 250px;
+  height:250px;
+}
+#row2{
+  margin-top: 110px;
+  margin-bottom: 110px;
+  
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.glass-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  text-align: center;
+}
+
+.glass-card h2 {
+  margin-top: 0;
+}
+
+.glass-card button {
+  padding: 10px 20px;
   border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.glass-card button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #dae0f4, #511c91);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(175, 200, 228, 0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
   position: relative;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger Menu (for mobile view) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+      position: absolute;
+      top: 60px;
+      right: -100%;
+      width: 200px;
+      background-color: #6e8efb;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: right 0.3s ease;
+  }
+
+  .navbar .nav-links.active {
+      right: 30px;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+}
+
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(10, 9, 12);
+  border: 2px solid rgb(47, 10, 235);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
   overflow: hidden;
-  z-index: 1;
-  box-shadow: 6px 6px 12px #c5c5c5,
-              -6px -6px 12px #ffffff;
- }
- 
- button::before {
+}
+
+.button::before {
   content: '';
-  width: 0;
-  height: 3em;
-  border-radius: 30em;
   position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
-  transition: .5s ease;
-  display: block;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
   z-index: -1;
- }
- 
- button:hover::before {
-  width: 9em;
- }
+  background-color: rgb(193, 163, 98);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+
