@@ -1,5 +1,5 @@
 import logo from './logo.jpeg';
-import {BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+//import {BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import './App.css';
 import './components/NavBar.jsx'
 import Intro from './components/Intro.jsx'
@@ -10,13 +10,13 @@ import SignUp from './components/LoginForm.jsx'
 
 const App = (() => {
   return (
-    <Router>
-      <NavBar/>
-      <Routes>
-        <Route path = "/" element = {<Intro/>} />
-      </Routes>
+    <div>
+      <NavBar />
+      <Intro />
+       <SignUp/>
+    </div>
 
-    </Router>
+
   )
 });
 
